@@ -1,0 +1,45 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Mini-projet 1}
+\author{Kataevskii Mikhail, Ahrend Laurentin-Wilhelm, Garcia Harlouchet Ivan, \\ Galliot Noémie, Duhautois Lucas}
+
+\begin{document}
+\maketitle
+
+\section{Présentation}
+
+Bla Bla Bla, le verre, c'est magnifique, etc.
+
+\section{Utilisation d'un algorithme de Deep Learning}
+\subsection{Introduction}
+
+On dispose de plusieurs modèles entrainés sur la base de données INTERGLAD qui permettent de prédire les propriétés du verre à partir de sa composition. On cherche à déterminer le verre dont les fractions molaires vérifient :
+\begin{itemize}
+    \item $0.3 < x_{Si} < 0.75$
+    \item $x_{CaO} < 0.35$
+    \item $0.1 < x_{Na_2O} < 0.29$
+    \item $x_{Al_2O_3} < 0.23$
+\end{itemize}
+On veut que le verre possède les propriétés suivantes :
+\begin{itemize}
+    \item $1200 ^{\circ} C < T_m < 1300 ^{\circ} C$
+    \item $2300 \text{ kg} \cdot \text{m}^{-3} < \rho < 2800 \text{ kg} \cdot \text{m}^{-3}$
+    \item $500 ^{\circ} C < T_g < 600 ^{\circ} C$
+    \item $70 < E < 90$
+\end{itemize}
+
+\end{document}
