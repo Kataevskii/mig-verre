@@ -27,12 +27,12 @@
 
 Le verre est un matériau d'avenir, recyclable à l'infini, mais sa production reste encore très polluante, notamment à cause de l'eau utilisée pour refroidir les systèmes et l'énergie dépensée pour chauffer les fours qui servent à la fusion du verre. De plus, les minéraux présent dans la composition initale du verre relâchent du $CO_2$ lors de leur fusion.
 
-De nombreuses pistes pour pallier à ce problème sont envisagée par les fabriquants, comme augmenter la proportion de calcin -verre recyclé- dans les préparations initales, ou encore passer de fours à gaz à des fours électriques; mais les progrès faits sont encore loin d'être satisfaisant.
+De nombreuses pistes pour pallier à ce problème sont envisagées par les fabriquants, comme augmenter la proportion de calcin (verre recyclé) dans les préparations initales, ou encore passer de fours à gaz à des fours électriques; mais les progrès faits sont encore loin d'être satisfaisant.
 
 Le but de ce mini-projet est donc de proposer une manière de réduire les émissions lors de la fabrication du verre. Pour cela, nous nous sommes concentrés sur la température de fusion de ce dernier. En effet, abaisser la température de fusion du verre signifie abaisser l'énergie nécessaire à sa fabrication. Cela permettrait aux entreprises de réaliser des économies d'énergies tout en diminuant leur émissions.
 Cependant, le verre ainsi obtenue doit répondre au cahier des charges des entreprises et ne pas perdre en propriétés telles que sa dureté, sa flexibilité ou encore son élasticité.
 
-Afin de répondre à cette problématique, nous disposons d'une base de données [Nom] regroupant les compositions et les propriétés de plusieurs centaines de milliers de verres.
+Afin de répondre à cette problématique, nous disposons d'une base de données "INTERGLAD" regroupant les compositions et les propriétés de plusieurs centaines de milliers de verres.
 
 L'objectif est donc de trouver à l'aide d'un algorithme génétique exploitant cette base données une composition de verre permettant de mnimiser la température de fusion du verre tout en conservant ses propriétés. La composition ainsi obtenue sera utilisée expérimentalement pour créer notre propre verre, sur lequel nous pourrons expérimenter afin de tester ses capacités.
 
@@ -40,6 +40,7 @@ L'objectif est donc de trouver à l'aide d'un algorithme génétique exploitant 
 \subsection{Introduction}
 
 On dispose de plusieurs modèles entrainés sur la base de données INTERGLAD qui permettent de prédire les propriétés du verre à partir de sa composition. On cherche à déterminer le verre dont les fractions molaires vérifient :
+
 \begin{itemize}
     \item $0.3 < x_{Si} < 0.75$
     \item $x_{CaO} < 0.35$
@@ -48,6 +49,7 @@ On dispose de plusieurs modèles entrainés sur la base de données INTERGLAD qu
 \end{itemize} 
 
 On veut que le verre possède les propriétés suivantes :
+
 \begin{itemize}
     \item $1200 ^{\circ} C < T_m < 1300 ^{\circ} C$
     \item $2300 \text{ kg} \cdot \text{m}^{-3} < \rho < 2800 \text{ kg} \cdot \text{m}^{-3}$
@@ -57,6 +59,7 @@ On veut que le verre possède les propriétés suivantes :
 
 Pour fabriquer le verre on a accès aux composantes suivantes :
 % cette liste est moche...
+
 \begin{itemize}
     \item $SiO_2$
     \item $Al_2O_3$
@@ -69,9 +72,9 @@ Pour fabriquer le verre on a accès aux composantes suivantes :
 \end{itemize}
 
 \subsection{Optimisation avec 4 composantes}
+%TODO
 
 \section{Fonte d'un premier verre}
-
 \subsection{Composition}
 
 En analysant les bases de données fournies par nos encadrants et celles sur Interglad, nous avons déterminé une première composition de verre, à l'aide uniquement de $SiO_2$, de $CaO$ et de $Na_20$, dont la température de fusion prédite est comprise entre 1200°C et 1300°C. Cette composition molaire est la suivante:
