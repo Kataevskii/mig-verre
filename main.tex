@@ -39,7 +39,7 @@ L'objectif est donc de trouver à l'aide d'un algorithme génétique exploitant 
 \section{Utilisation d'un algorithme de Deep Learning}
 \subsection{Introduction}
 
-Nous disposons de plusieurs modèles entrainés sur la base de données INTERGLAD qui permettent de prédire les propriétés du verre à partir de sa composition. Nous chercheons à déterminer le verre dont les fractions molaires vérifient :
+Nous disposons de plusieurs modèles entrainés sur la base de données INTERGLAD qui permettent de prédire les propriétés du verre à partir de sa composition. Nous cherchons à déterminer un verre dont les fractions molaires vérifient :
 
 \begin{itemize}
     \item $0.3 < x_{Si} < 0.75$
@@ -48,7 +48,7 @@ Nous disposons de plusieurs modèles entrainés sur la base de données INTERGLA
     \item $x_{Al_2O_3} < 0.23$
 \end{itemize} 
 
-Nous souhaiteons obtenir un verre qui possède les propriétés suivantes :
+Nous souhaitons obtenir un verre qui possède les propriétés suivantes :
 
 \begin{itemize}
     \item $1200 ^{\circ} C < T_m < 1300 ^{\circ} C$
@@ -76,13 +76,27 @@ En analysant les bases de données fournies par nos encadrants et celles sur Int
     \item 23,3 \% de $Na_2O$
 \end{itemize}
 
-Cette composition est très proche de celle utilisée par les égyptiens il y a plus de 2500 ans, d’après les écrits de la bibliothèque du roi Assurbanipal (70 \% de $SiO_2$, 10 \% de $CaO$, 20\% de $Na_2O$). En effet, le verre est connu depuis très longtemps et sa composition a peu varié. 
+Cette composition est très proche de celle utilisée par les égyptiens il y a plus de 2500 ans, d’après les écrits de la bibliothèque du roi Assurbanipal (70 \% de $SiO_2$, 10 \% de $CaO$, 20\% de $Na_2O$), car le verre est connu depuis très longtemps et sa composition a peu varié. 
 
-Ces proportions ont ensuite été converties en proportion massique, afin de réaliser le mélange à l'aide d'une balance de précision. Après homogénéisation, le mélange est introduit dans un creuset, lui-même inséré dans un support, avant d'être mis dans un four électrique. Le support du creuset a été taillé dans du graphite afin d'avoir la même taille que ce dernier et ainsi permettre une meilleure prise pour la pince à la sortie du four.
+En effet, un verre est composé des trois éléments principaux:
+\begin{itemize}
+    \item un formateur: Le formateur de verre forme la structure du verre. Il s'agit ici de $SiO_2$.
+    \item Un fondant: Les fondants permettent la réduction de la température de fusion du verre en rompant certaines liaisons entre les molécules du formateur. Il s'agit ici de $Na_2O$
+    \item Un ou plusieurs modificateur(s) de réseaux: Les modificateurs de réseaux permettent d'améliorer les propriétés du verre telles que la durabilité chimique ou mécanique. Il s'agit ici de $CaO$.\\
+\end{itemize}
+Les trois composants utilisés pour cette première compositions sont les composants les plus classiques, du fait de leurs rôles respectifs dans la formation du verre, il n'est pas étonnant de retrouver une composition similaire à celle utilisée il y a déjà plusieurs milliers d'années. 
+
+Par la suite, nous tenterons d'élaborer un verre plus compliqué, notamment à l'aide d'ajouts d'oxides de minéraux.
+
+\subsection{Fusion du mélange}
+
+Les proportions citées ci-dessus ont ensuite été converties en proportion massique, afin de réaliser le mélange à l'aide d'une balance de précision. Après homogénéisation, le mélange est introduit dans un creuset, lui-même inséré dans un support, avant d'être mis dans un four électrique. Le support du creuset a été taillé dans du graphite afin d'avoir la même taille que ce dernier et ainsi permettre une meilleure prise pour la pince à la sortie du four.
 
 Le protocole de fusion du verre est donné en annexe. Pour des raisons techniques de taille du creuset, la fonte est réalisée en deux parties. Une première partie du mélange est fondue puis une deuxième partie du mélange est réintroduite dans le liquide, et la fusion se poursuit.
 
-Le liquide obtenu est ensuite coulé dans un moule en acier rectangulaire.
+Le liquide obtenu est ensuite coulé dans un moule en acier rectangulaire. Le verre ainsi obtenu est laissé à refroidir à l'air libre.
+
+Toutes les manipulations en contact direct avec le four à de très hautes températures ont été réalisées par Franck Pigeonneau et Cristophe Prady, à l'aide d'équipements de protections contre ces températures.
 
 \section{Annexe mini-projet 1}
 \subsection{Protocole de fusion du verre}
@@ -100,8 +114,5 @@ Lors de la fusion du verre, nous avons suivis le protole suivant :
     \item Remise en température à Tm pour 1h
     \item Coulée du verre
 \end{itemize}
-
-Toutes les manipulations en contact direct avec le four à très hautes températures ont été réalisées par Franck Pigeonneau et Cristophe Prady, à l'aide d'équipements de protections contre ces températures.
-
 
 \end{document}
