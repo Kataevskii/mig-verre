@@ -7,12 +7,15 @@
 
 % Set page size and margins
 % Replace `letterpaper' with `a4paper' for UK/EU standard size
-\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
 
 % Useful packages
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% Other packages
+\usepackage[indent]{parskip}
 
 \title{Mini-projet 1}
 \author{Kataevskii Mikhail, Ahrend Laurentin-Wilhelm, Garcia Harlouchet Ivan, \\ Galliot Noémie, Duhautois Lucas}
@@ -24,12 +27,12 @@
 
 Le verre est un matériau d'avenir, recyclable à l'infini, mais sa production reste encore très polluante, notamment à cause de l'eau utilisée pour refroidir les systèmes et l'énergie dépensée pour chauffer les fours qui servent à la fusion du verre. De plus, les minéraux présent dans la composition initale du verre relâchent du $CO_2$ lors de leur fusion.
 
-De nombreuses pistes pour pallier à ce problème sont envisagée par les fabriquants, comme augmenter la proportion de calcin -verre recyclé- dans les préparations initales, ou encore passer de fours à gaz à des fours électriques; mais les progrès faits sont encore loin d'être satisfaisant. \\
+De nombreuses pistes pour pallier à ce problème sont envisagée par les fabriquants, comme augmenter la proportion de calcin -verre recyclé- dans les préparations initales, ou encore passer de fours à gaz à des fours électriques; mais les progrès faits sont encore loin d'être satisfaisant.
 
 Le but de ce mini-projet est donc de proposer une manière de réduire les émissions lors de la fabrication du verre. Pour cela, nous nous sommes concentrés sur la température de fusion de ce dernier. En effet, abaisser la température de fusion du verre signifie abaisser l'énergie nécessaire à sa fabrication. Cela permettrait aux entreprises de réaliser des économies d'énergies tout en diminuant leur émissions.
 Cependant, le verre ainsi obtenue doit répondre au cahier des charges des entreprises et ne pas perdre en propriétés telles que sa dureté, sa flexibilité ou encore son élasticité.
 
-Afin de répondre à cette problématique, nous disposons d'une base de données [Nom] regroupant les compositions et les propriétés de plusieurs centaines de milliers de verres.\\
+Afin de répondre à cette problématique, nous disposons d'une base de données [Nom] regroupant les compositions et les propriétés de plusieurs centaines de milliers de verres.
 
 L'objectif est donc de trouver à l'aide d'un algorithme génétique exploitant cette base données une composition de verre permettant de mnimiser la température de fusion du verre tout en conservant ses propriétés. La composition ainsi obtenue sera utilisée expérimentalement pour créer notre propre verre, sur lequel nous pourrons expérimenter afin de tester ses capacités.
 
@@ -79,18 +82,18 @@ En analysant les bases de données fournies par nos encadrants et celles sur Int
     \item 23,3 \% de $Na_20$
 \end{itemize}
 
-Cette composition est très proche de celle utilisée par les égyptiens il y a plus de 2500 ans, d’après les écrits de la bibliothèque du roi Assurbanipal (70 \% de $SiO_2$, 10 \% de $CaO$, 20\% de $Na_20$). En effet, le verre est connu depuis très longtemps et sa composition a peu varié. \\
+Cette composition est très proche de celle utilisée par les égyptiens il y a plus de 2500 ans, d'après les écrits de la bibliothèque du roi Assurbanipal (70 \% de $SiO_2$, 10 \% de $CaO$, 20\% de $Na_20$). En effet, le verre est connu depuis très longtemps et sa composition a peu varié.
 
-Ces proportions ont ensuite été converties en proportion massique, afin de réaliser le mélange à l’aide d’une balance de précision. Après homogénéisation, le mélange est introduit dans un creuset, lui-même inséré dans un support, avant d’être mis dans un four électrique. Le support du creuset a été taillé dans du graphite afin d’avoir la même taille que ce dernier et ainsi permettre une meilleure prise pour la pince à la sortie du four.\\
+Ces proportions ont ensuite été converties en proportion massique, afin de réaliser le mélange à l'aide d'une balance de précision. Après homogénéisation, le mélange est introduit dans un creuset, lui-même inséré dans un support, avant d'être mis dans un four électrique. Le support du creuset a été taillé dans du graphite afin d'avoir la même taille que ce dernier et ainsi permettre une meilleure prise pour la pince à la sortie du four.
 
-Le protocole de fusion du verre est donné en annexe. Pour des raisons techniques de taille du creuset, la fonte est réalisée en deux parties. Une première partie du mélange est fondue puis une deuxième partie du mélange est réintroduite dans le liquide, et la fusion se poursuit.\\
+Le protocole de fusion du verre est donné en annexe. Pour des raisons techniques de taille du creuset, la fonte est réalisée en deux parties. Une première partie du mélange est fondue puis une deuxième partie du mélange est réintroduite dans le liquide, et la fusion se poursuit.
 
-Le liquide obtenu est ensuite coulé dans un moule en acier rectangulaire.\\
+Le liquide obtenu est ensuite coulé dans un moule en acier rectangulaire.
 
 \section{Annexe mini-projet 1}
 \subsection{Protocole de fusion du verre}
 
-Lors de la fusion du verre, nous avons suivis le protole suivant: \\
+Lors de la fusion du verre, nous avons suivis le protole suivant :
 
 \begin{itemize}
     \item Préparation de la composition
