@@ -60,7 +60,9 @@ Pour fabriquer le verre nous avons accès aux composants suivantes : $SiO_2$, $A
 
 \subsection{Optimisation à partir de composants de base}
 
-Nous avons d'abord cherché une composition optimale en se limitant aux 3 composants de base qu'on retrouve dans la plupart de verres : $SiO_2$, $NaO_2$ et $CaO$. Pour cela on a modifié la fonction de tirage au sort pour se limiter aux mélanges de ces 3 éléments. On a ensuite trié la liste de compositions obtenues afin de trouver celle qui correspond le mieux à nos exigences.
+Nous avons d'abord cherché une composition optimale en se limitant aux 3 composants de base qu'on retrouve dans la plupart de verres : $SiO_2$, $NaO_2$ et $CaO$. Pour cela nous avons modifié la fonction de tirage au sort pour se limiter aux mélanges de ces 3 éléments. Nous avons ensuite trié la liste de compositions obtenues afin de trouver celle qui correspond le mieux à nos exigences.
+
+La composition obtenue a été utilisée pour la première fusion du verre.
 
 \subsection{Elaboration d'un algorithme génétique}
 %TODO
@@ -103,15 +105,17 @@ Toutes les manipulations en contact direct avec le four à de très hautes temp�
 
 Le verre obtenu a été refroidi à température ambiante. Cependant, ce refroidissement a donc été inhomogène, plus rapide à l'extérieur qu'à l'intérieur. Cela a induit des contraintes, fragilisant le verre.
 
-Pour pallier à ce problème, le verre est donc recuit. Il est enfourné dans un four dont la température est celle de sa transition vitreuse, soit environ 500°C. Le four est éteint et laissé à refroidir petit à petit avec le verre à l'intérieur.
+Pour pallier à ce problème, le verre est donc recuit. Il est enfourné dans un four dont la température est celle de sa transition vitreuse, soit environ 500°C. Le four est éteint et laissé à refroidir toute la nuit avec le verre à l'intérieur.
 Cette étape permet la suppression des contraintes.
 
 \subsection{Analyse des propriétés du verre}
 
 Le verre obtenu est ensuite analysé. Il est tout d'abord exposé à de la lumière polarisante afin de vérifier si les contraintes ont bien disparue.
+[photos à insérer et commenter]
 
 
-Il est ensuite observé au microscope optique, où l'on peut voir la présence de rares infondus. Ce passage au microscope optique nous a permis également d'observer les bulles présentes dans le verre et de les compter.  [photos à insérer et à commenter]
+Il est ensuite observé au microscope optique, où l'on peut voir la présence de rares infondus. Ce passage au microscope optique nous a permis également d'observer les bulles présentes dans le verre et de les compter, afin d'éliminer cette source d'erreur lors de la mesure de la densité.
+ [photos à insérer et à commenter]
 
 Le verre a ensuite été découpé afin de pouvoir mesurer sa dureté de Vicker et sa densité. 
 
@@ -148,7 +152,7 @@ dimension interne HxLxP (mm) & 220x220x310 \\
 \hline
 Dimension externe HxLxP (mm) & 810x690x780 \\
 \hline
-Puissance max (W) &     10 000 \\
+Puissance max (W) & 10 000 \\
 \hline
 Puissance de maintien à température (W) & 2900 \\
 \hline
