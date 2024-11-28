@@ -33,7 +33,7 @@ Le but de ce mini-projet est donc d'étudier une manière de réduire les émiss
 
 Afin de répondre à cette problématique, nous disposons d'une base de données \textit{Interglad} regroupant les compositions et les propriétés de plusieurs centaines de milliers de verres.
 
-Notre objectif est de développer un algorithme génétique exploitant cette base de données afin de trouver une composition de verre qui permet de minimises la température de fusion tout en conservant les propriétés exigées. La composition ainsi obtenue sera utilisée pour créer notre propre verre, sur lequel nous pourrons expérimenter afin de tester ses capacités.
+Notre objectif est de développer un algorithme génétique exploitant cette base de données afin de trouver une composition de verre qui permet de minimiser la température de fusion tout en conservant les propriétés exigées. La composition ainsi obtenue sera utilisée pour créer notre propre verre, sur lequel nous pourrons expérimenter afin de tester ses capacités.
 
 \section{Utilisation d'un algorithme de Deep Learning}
 \subsection{Les propriétés recherchées}
@@ -82,9 +82,9 @@ Cette composition est très proche de celle utilisée par les égyptiens il y a 
 
 En effet, un verre est composé des trois éléments principaux:
 \begin{itemize}
-    \item un formateur: Le formateur de verre forme la structure du verre. Il s'agit ici de $SiO_2$.
-    \item Un fondant: Les fondants permettent la réduction de la température de fusion du verre en rompant certaines liaisons entre les molécules du formateur. Il s'agit ici de $Na_2O$
-    \item Un ou plusieurs modificateur(s) de réseaux: Les modificateurs de réseaux permettent d'améliorer les propriétés du verre telles que la durabilité chimique ou mécanique. Il s'agit ici de $CaO$.
+    \item un formateur : Le formateur de verre forme la structure du verre. Il s'agit ici de $SiO_2$.
+    \item Un fondant : Les fondants permettent la réduction de la température de fusion du verre en rompant certaines liaisons entre les molécules du formateur. Il s'agit ici de $Na_2O$
+    \item Un ou plusieurs modificateur(s) de réseaux : Les modificateurs de réseaux permettent d'améliorer les propriétés du verre telles que la durabilité chimique ou mécanique. Il s'agit ici de $CaO$.
 \end{itemize}
 
 Les trois composants utilisés pour cette première compositions sont les composants les plus classiques, du fait de leurs rôles respectifs dans la formation du verre. Il n'est donc pas étonnant de retrouver une composition similaire à celle utilisée il y a déjà plusieurs milliers d'années. 
@@ -124,7 +124,7 @@ Le verre a ensuite été découpé afin de pouvoir mesurer sa dureté de Vicker 
 
 Lors de la fusion du verre, nous avons suivis le protocole suivant :
 
-\begin{itemize}
+\begin{enumerate}
     \item Préparation de la composition
     \item Enfournement d'une première partie du mélange vitrifiable
     \item Montée en température du four à 900°C
@@ -134,7 +134,7 @@ Lors de la fusion du verre, nous avons suivis le protocole suivant :
     \item Enfournement du reste de la composition
     \item Remise en température à Tm pour 1h
     \item Coulée du verre dans un moule
-\end{itemize}
+\end{enumerate}
 
 \subsection{Capacités du four électrique utilisé pour la fusion}
 
