@@ -33,7 +33,7 @@ Le but de ce mini-projet est donc d'étudier une manière de réduire les émiss
 
 Afin de répondre à cette problématique, nous disposons d'une base de données \textit{Interglad} regroupant les compositions et les propriétés de plusieurs centaines de milliers de verres.
 
-Notre objectif est de développer un algorithme génétique exploitant cette base de données afin de trouver une composition de verre qui permet de minimiser la température de fusion tout en conservant les propriétés exigées. En effet, si il existe de nombreux algorithme visant à prédire les propriétés du verre à partir de sa composition, il n'en existe pas qui permette de prédire une composition à partir de propriétés spécifiques.
+Notre objectif est de développer un algorithme génétique exploitant cette base de données afin de trouver une composition de verre qui permet de minimiser la température de fusion tout en conservant les propriétés exigées. En effet, si il existe de nombreux algorithme visant à prédire les propriétés du verre à partir de sa composition, il n'en existe pas qui permette de prédire une composition optimale à partir de propriétés spécifiques.
 
 La composition ainsi obtenue sera utilisée pour créer notre propre verre, sur lequel nous pourrons expérimenter afin de tester ses capacités.
 
@@ -62,7 +62,7 @@ Pour fabriquer le verre nous avons accès aux composants suivantes : $SiO_2$, $A
 
 \subsection{Optimisation à partir de composants de base}
 
-Nous avons d'abord cherché une composition optimale en se limitant aux 3 composants de base qu'on retrouve dans la plupart de verres : $SiO_2$, $NaO_2$ et $CaO$. Pour cela nous avons modifié la fonction de tirage au sort pour se limiter aux mélanges de ces 3 éléments. Nous avons ensuite trié la liste de compositions obtenues afin de trouver celle qui correspond le mieux à nos exigences.
+Nous avons d'abord cherché une composition optimale en se limitant aux 3 composants de base que l'on retrouve dans la plupart de verres : $SiO_2$, $NaO_2$ et $CaO$. Pour cela nous avons modifié la fonction de tirage au sort pour se limiter aux mélanges de ces 3 éléments. Nous avons ensuite trié la liste de compositions obtenues afin de trouver celle qui correspond le mieux à nos exigences.
 
 La composition obtenue a été utilisée pour la première fusion du verre.
 
@@ -120,6 +120,8 @@ Il est ensuite observé au microscope optique, où l'on peut voir la présence d
  [photos à insérer et à commenter]
 
 Le verre a ensuite été découpé afin de pouvoir mesurer sa dureté de Vicker et sa densité. 
+
+La densité du verre a été mesurée à l'aide d'un densimètre, utilisant une balance de précison pour mesurer la masse et des particules fines pour mesurer le volume. 
 
 \section{Annexe mini-projet 1}
 \subsection{Protocole de fusion du verre}
