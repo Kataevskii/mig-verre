@@ -25,7 +25,7 @@
 
 \section{Présentation}
 
-Le verre est un matériau d'avenir, recyclable à l'infini, mais sa production reste encore très polluante, notamment à cause de l'eau utilisée pour refroidir les systèmes et l'énergie dépensée pour chauffer les fours qui servent à la fusion du verre. De plus, les minéraux présent dans la composition initiale du verre relâchent du $CO_2$ lors de leur fusion.
+Le verre est un matériau d'avenir, recyclable à l'infini, mais sa production reste encore très polluante, notamment à cause de l'eau utilisée pour refroidir les systèmes et l'énergie dépensée pour chauffer les fours qui servent à la fusion du verre. De plus, les minéraux présents dans la composition initiale du verre relâchent du $CO_2$ lors de leur fusion.
 
 De nombreuses pistes pour pallier à ce problème sont envisagées par les fabriquants, comme augmenter la proportion de calcin (verre recyclé) dans les préparations initiales, ou encore passer de fours à gaz à des fours électriques; mais les progrès faits sont encore loin d'être satisfaisant.
 
@@ -49,7 +49,7 @@ Nous disposons de plusieurs modèles entraînés sur la base de données \textit
     \item $x_{Al_2O_3} < 0,23$
 \end{itemize} 
 
-Nous cherchons à obtenir un verre qui possède les propriétés suivantes :
+Nous cherchons à obtenir les propriétés suivantes :
 
 \begin{itemize}
     \item $1200 ^{\circ} C < T_m < 1300 ^{\circ} C$
@@ -58,7 +58,7 @@ Nous cherchons à obtenir un verre qui possède les propriétés suivantes :
     \item $70 < E < 90$
 \end{itemize}
 
-Pour fabriquer le verre nous avons accès aux composants suivantes : $SiO_2$, $Al_2O_3$, $MgO$, $CaO$, $Na_2O$, $K_2O$, $ZnO$, $TiO_2$
+Pour fabriquer le verre nous avons accès aux composants suivants : $SiO_2$, $Al_2O_3$, $MgO$, $CaO$, $Na_2O$, $K_2O$, $ZnO$, $TiO_2$
 
 \subsection{Optimisation à partir de composants de base}
 
@@ -66,29 +66,31 @@ Nous avons d'abord cherché une composition optimale en se limitant aux 3 compos
 
 La composition obtenue a été utilisée pour la première fusion du verre.
 
-\subsection{Elaboration d'un algorithme génétique}
+\subsection{\'Elaboration d'un algorithme génétique}
 %TODO
 
 \section{Fonte d'un premier verre}
-Dans la suite, on réfèrera à ce verre comme le verre 0.
+%TODO
+
+Dans la suite, on réfèrera à ce verre comme le verre 1.
 \subsection{Composition}
 
-En analysant les bases de données fournies par nos encadrants et celles sur Interglad, nous avons déterminé une première composition de verre, à l'aide uniquement de $SiO_2$, de $CaO$ et de $Na_2O$. Cette composition molaire est la suivante:
+En analysant les bases de données fournies par nos encadrants et celles sur \textit{Interglad}, nous avons déterminé une première composition de verre, à l'aide uniquement de $SiO_2$, de $CaO$ et de $Na_2O$. Cette composition molaire est la suivante:
 
-\begin{table}[h!]
+\begin{table}[h]
 \centering
 \begin{tabular}{|c|c|c|c|}
     \hline
-    élément &  $SiO_2$ & $CaO$ & $Na_2O$ \\
+    \'Elément &  $SiO_2$ & $CaO$ & $Na_2O$ \\
     \hline
-    proportion & 65,4 \% & 11,3 \% & 23,3 \% \\
+    Proportion & 65,4 \% & 11,3 \% & 23,3 \% \\
     \hline
     \end{tabular} 
 \end{table}
 
 D'après l'algorithme génétique, les propriétés de ce verre sont les suivantes:
 
-\begin{table}[h!]
+\begin{table}[h]
 \centering
 \begin{tabular}{|c|c|}
     \hline
@@ -193,7 +195,7 @@ Cette mesure est effectuée en enfoncant un poinçon en diamant dans le verre et
 La densité du verre a été mesurée à l'aide d'un densimètre, utilisant une balance de précison pour mesurer la masse et des particules fines pour mesurer le volume. 
 
 \section{Fusion d'un verre plus complexe}
-Dans la suite, on réfèrera à ce verre comme le verre 1.
+Dans la suite, on réfèrera à ce verre comme le verre 2.
 
 \subsection{Composition}
 
@@ -235,7 +237,7 @@ La première partie du mélange est mise dans le four qui est déjà à la temp�
 \section{Annexe mini-projet 1}
 \subsection{Protocole de fusion du verre}
 
-Lors de la fusion du verre 0, nous avons suivis le protocole suivant :
+Lors de la fusion du verre 1, nous avons suivis le protocole suivant :
 
 \begin{enumerate}
     \item Préparation de la composition
@@ -297,6 +299,7 @@ Poids (kg) & 125 \\
 \subsection{Prédiction des propriétées des verres}
 \begin{figure}[ht]
     \centering
+    % TODO Renommer le graphe
     \includegraphics[width=0.7\textwidth]{photos/graphe viscosité.png}
     \caption{viscosité prévue par IA en fonction de la température}
 \end{figure}
@@ -304,13 +307,13 @@ Poids (kg) & 125 \\
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.7\textwidth]{photos/E rho.png}
-    \caption{Position prévue par IA des verres dans le plan (E,rho),\\ Le verre 0 est représenté en noir, le verre 1 en bleu}
+    \caption{Position prévue par IA des verres dans le plan (E,rho),\\ Le verre 1 est représenté en noir, le verre 2 en bleu}
 \end{figure}
 
 \begin{figure}[ht]
     \centering
     \includegraphics[width=0.7\textwidth]{photos/Tg Tm.png}
-    \caption{Position prévue par IA des verres dans le plan (Tg,Tm),\\ Le verre 0 est représenté en noir, le verre 1 en bleu}
+    \caption{Position prévue par IA des verres dans le plan (Tg,Tm),\\ Le verre 1 est représenté en noir, le verre 2 en bleu}
 \end{figure}
 
 \end{document}
