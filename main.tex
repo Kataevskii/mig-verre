@@ -101,7 +101,7 @@ D'après l'algorithme génétique, les propriétés de ce verre sont les suivant
     \hline
     Température de transition vitreuse & 502 °C \\
     \hline
-    Module de Young & 73,6 \\
+    Module de Young & 73,6 GPa \\
     \hline
     Masse volumique & 2,57 $g/cm^{3}$ \\
     \hline
@@ -237,7 +237,7 @@ D'après l'algorithme génétique, les propriétés de ce verre sont les suivant
     \hline
     Température de transition vitreuse & 563 °C \\
     \hline
-    Module de Young & 81,2 \\
+    Module de Young & 81,2 GPa \\
     \hline
     Masse volumique & 2,81 $g/cm^{3}$ \\
     \hline
@@ -293,6 +293,49 @@ Le verre est passé à la lumière polarisante, avant et après recuisson.
 \end{figure}
 
 On observe avant la recuisson, la présence de couleurs, qui indique les contraintes formées lors du refroidissement. Après la recuisson, les couleurs ont disparues révélant ainsi que les contraintes ont bien été éliminées. Le verre est donc plus solide.
+
+
+\section{Fusion d'un verre à très basse température de fusion}
+
+Dans la suite, on référera à ce verre comme le verre 3.
+
+\subsection{Composition}
+
+Nous avons réalisé un algorithme génétique utilisant le réseau de neurones fourni par notre encadrant afin de trouver une nouvelle composition. 
+Parmi les compositions proposées par l'algorithme, nous avons choisis celle qui nous paraissait la plus réalisable tout en ayant les meilleures propriétés.
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        élément &  $SiO_2$ & $CaO$ & $Na_2O$ & $K_2O$ & $MgO$  \\
+        \hline
+        proportion & 55 \% & 4 \% & 17 \% & 20 \% & 4 \% \\
+        \hline
+        \end{tabular} 
+    \end{table}
+
+D'après l'algorithme génétique, les propriétés de ce verre sont les suivantes:
+
+\begin{table}[ht]
+    \centering
+\begin{tabular}{|c|c|}
+    \hline
+    Température de fusion & 1031°C \\
+    \hline
+    Température de transition vitreuse & 398 °C \\
+    \hline
+    Module de Young & 57 GPa \\
+    \hline
+    Masse volumique & 2,563 $g/cm^{3}$ \\
+    \hline
+    \end{tabular} 
+\end{table}
+
+\subsection{Fusion du verre}
+
+La fusion est toujours réalisée en deux parties.
+Le four était déjà à la température de 1100°C lorsque la première partie du mélange à été introduite. Deux heures plus tard, la seconde partie du mélange à été versée dans le creuset, puis encore deux heures plus tard, le verre a été coulé dans le moule.
 
 \section{Annexe mini-projet 1}
 \subsection{Protocole de fusion du verre}
